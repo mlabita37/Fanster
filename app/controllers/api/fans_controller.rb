@@ -1,7 +1,7 @@
 class Api::FansController < ApplicationController
   def index
     fans = Fan.all
-    render json: {fans: fans}
+    render json: {fans:fans}
   end
 
   def create
