@@ -8,8 +8,8 @@ app.controller('FansController', ['$scope', '$http', function($scope, $http){
   });
 
   $scope.newFan = {};
-  $scope.createTroll = function(){
-    $http.post('/api/fans', {fans: $scope.newFan}).then(function(response){
+  $scope.createFan = function(){
+    $http.post('/api/fans', {fan: $scope.newFan}).then(function(response){
       var data = response.data;
       $scope.fans.push( data );
     });
