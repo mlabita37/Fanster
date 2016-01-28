@@ -1,7 +1,6 @@
 <h1>Fanster</h1>
 <section ng-controller="FansController">
 
-
 <form ng-submit="createFan()">
   <input type="text" ng-model="newFan.name" placeholder="Name">
   <input type="text" ng-model="newFan.age" placeholder="Age">
@@ -12,13 +11,27 @@
   <input type="submit">
 </form>
 
-<div ng-repeat="fan in fans">
-  <h4>Name: {{ fan.name }} </h2>
-  <p>Age: {{ fan.age }}</p>
-  <p>City: {{ fan.city }} </p>
-  <p>State: {{ fan.state }}</p>
-  <p>Country: {{ fan.country }}</p>
-  <p>Email: {{ fan.email }}</p>
-</div>
+<table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="fan in fans">
+      <td>{{ fan.name }}</td>
+      <td>{{ fan.age }}</td>
+      <td>{{ fan.city }}</td>
+      <td>{{ fan.state }}</td>
+      <td>{{ fan.country }}</td>
+      <td>{{ fan.email }}</td>
+    </tr>
+  </tbody>
+</table>
 
-</section
+</section>
