@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Fan.create({
+  name:'Mike Labita',
+  age: 31,
+  city: 'Brooklyn',
+  state: 'NY',
+  country: 'USA',
+  email: 'mlabita37@gmail.com'
+})
