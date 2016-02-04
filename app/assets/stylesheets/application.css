@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+background: url("https://oliviacunning.files.wordpress.com/2012/09/depositphotos_3720977_original.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+body{
+  text-align: center;
+}
+
+input[type=submit]{
+  background-color: mediumturquoise;
+}
+
+#fans{
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+th {
+  color: darkturquoise;
+  text-align: center;
+}
+td{
+  color: mintcream;
+  text-align: center;
+}
