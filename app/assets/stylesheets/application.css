@@ -26,6 +26,10 @@ body{
   text-align: center;
 }
 
+h1{
+  font-family: 'Metal Mania', cursive;
+}
+
 input[type=submit]{
   background-color: mediumturquoise;
 }
