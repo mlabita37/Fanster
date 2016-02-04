@@ -12,6 +12,7 @@ app.controller('FansController', ['$scope', '$http', function($scope, $http){
     $http.post('/api/fans', {fan: $scope.newFan}).then(function(response){
       var data = response.data;
       $scope.fans.push( data );
+      $scope.newFan = {};
     });
   };
 
