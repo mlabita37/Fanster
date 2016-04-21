@@ -48,3 +48,7 @@ td{
   color: mintcream;
   text-align: center;
 }
+
+table {
+  margin: 0 auto 200px;
+}
